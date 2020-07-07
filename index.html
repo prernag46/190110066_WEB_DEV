@@ -14,7 +14,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            box-shadow: 0 4px 8px 0 rgba(145, 143, 143, 0.2);
+            box-shadow: 4px 4px 4px 4px rgba(177, 175, 175, 0.2);
         }
 
         .heading{ /*For each category*/                       
@@ -31,25 +31,27 @@
             margin: 100px
         }
 
-        .topnav { /* Style the navigation bar */
+        ul {
             overflow: hidden;
             background-color: rgb(125, 125, 125);
-	    border-radius: 20px;
+	        border-radius: 20px;
+            padding: 10px 150px;
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
         }
 
-        .topnav a { /* Style the links */
-            float: left;
+        li a { /* Style the links */
             display: block;
             color: rgb(255, 255, 255);
             text-align: center;
-            padding: 14px 142px;
-	    font-size: 20px;
-	    font-family: Arial;
+	        font-size: 20px;
+	        font-family: Arial;
             text-decoration: none;
             transition: font-size 1s;
         }
 
-        .topnav a:hover {
+        li a:hover {
 	    background-color: #ddd;
             color: rgb(47, 47, 47);
             font-size: 25px;
@@ -75,12 +77,12 @@
     <h1 style = "font-family: Arial; color: white; font-size: 60px; text-align: center;">Prerna Gupta</h1>
     <br>
 
-    <div class="topnav">
-  	<a href="#Edu"><b>Education</b></a>
-  	<a href="#Hob"><b>Hobbies</b></a>
-  	<a href="#Amb"><b>Ambitions</b></a>
-	<a href="#Cont"><b>Contact Me</b></a>
-    </div>
+    <ul>
+  	<li><a href="#Edu"><b>Education</b></a></li>
+  	<li><a href="#Hob"><b>Hobbies</b></a></li>
+  	<li><a href="#Amb"><b>Ambitions</b></a></li>
+	<li><a href="#Cont"><b>Contact Me</b></a></li>
+    </ul>
 
     <br><br><br>
     
