@@ -5,44 +5,96 @@
     <title> Prerna Gupta </title>
 
     <style>
+
+        html{
+            scroll-behavior: smooth;
+        }
+
         .center{
             display: block;
             margin-left: auto;
             margin-right: auto;
+            box-shadow: 0 4px 8px 0 rgba(145, 143, 143, 0.2);
         }
 
-        .heading{ <!-- For each category -->
+        .heading{ /*For each category*/                       
             font-family: Arial; 
             color: white; 
             font-size: 40px; 
             margin: 70px;
         }
 
-        .content{ <!-- For description within each category-->
+        .content{ /* For description within each category*/
             font-family: Arial; 
             color: rgb(167, 167, 167); 
             font-size: 20px; 
             margin: 100px
         }
+
+        .topnav { /* Style the navigation bar */
+            overflow: hidden;
+            background-color: rgb(125, 125, 125);
+	    border-radius: 20px;
+        }
+
+        .topnav a { /* Style the links */
+            float: left;
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 142px;
+	    font-size: 20px;
+	    font-family: Arial;
+            text-decoration: none;
+            transition: font-size 1s;
+        }
+
+        .topnav a:hover {
+	    background-color: #ddd;
+            color: rgb(47, 47, 47);
+            font-size: 25px;
+        }
+
+	a:link {
+  	   color: white;
+  	   background-color: transparent;
+  	   text-decoration: none;
+	}
+	
+	a:visited {
+  	   color: white;
+  	   background-color: transparent;
+  	   text-decoration: none;
+	}
+
     </style>
 </head>
 
-<body style = "background-color:rgb(30, 30, 30);">
+<body style="background-color: rgb(30, 30, 30);">
 
     <h1 style = "font-family: Arial; color: white; font-size: 60px; text-align: center;">Prerna Gupta</h1>
     <br>
+
+    <div class="topnav">
+  	<a href="#Edu"><b>Education</b></a>
+  	<a href="#Hob"><b>Hobbies</b></a>
+  	<a href="#Amb"><b>Ambitions</b></a>
+	<a href="#Cont"><b>Contact Me</b></a>
+    </div>
+
+    <br><br><br>
     
-    <img src = "Images\Photo.png" alt = "Prerna" style="height: 300px; width: 300px;" class="center">
+    <img src = "C:\Users\hp\Desktop\Prerna\Website\Images\20200629_151314 (1).jpg" alt = "Prerna" style="height: 350px; width: 400px;" class="center">
     <br>
     
     
-    <h2 class = "heading">Education  <!-- Adding links of both websites to their respective images-->
+    <h2 class = "heading" id = "Edu">Education  <!-- Adding links of both websites to their respective images-->
         <a href="http://rohini.ths.ac.in/">
-            <img src="Images\THSR.PNG" style="float: right; height: 150px;">
+            <img src="C:\Users\hp\Desktop\Prerna\Website\Images\THSR.PNG" style="float: right; height: 150px;">
             </a>
     
             <a href="http://www.iitb.ac.in/">
-            <img src="Images\IIT.png" style="float: right; margin-right: 100px; height: 150px;">
+            <img src="C:\Users\hp\Desktop\Prerna\Website\Images\IIT.png" style="float: right; margin-right: 100px; height: 150px;">
             </a>
     </h2>
     
@@ -52,12 +104,13 @@
         <br>
         B. Tech. in Metallurgical Engineering and Materials Science<br><br>
         <b>The Heritage School Rohini</b> (2005 - 2019)<br>
-        Plus two subjects: Physics, Chemistry, Maths<br>
+        Plus two subjects: Physics, Chemistry, Maths<br><br>
+	    <b>(Click on the icons of the institutions to visit their official pages)</b><br>
     </p>
 
     
-    <h2 class = "heading">Hobbies
-        <img src="Images\Reading.jpg" style="float: right; height: 325px; width: 250px">
+    <h2 class = "heading" id = "Hob">Hobbies
+        <img src="C:\Users\hp\Desktop\Prerna\Website\Images\Reading.jpg" style="float: right; height: 325px; width: 250px">
     </h2>
 
     <p class = "content">Reading books<br>
@@ -66,12 +119,31 @@
         Learning new things<br>
     </p>
 
-    <h2 class = "heading">Ambitions</h2>
+    <h2 class = "heading" id = "Amb">Ambitions</h2>
 
     <p class = "content">
         To be productive every single day of my life, learn and explore new things, travel the world and be happy :)
 
     </p>
+
+    <h2 class = "heading" id = "Cont">Contact Me</h2>
+
+    <p class = "content">
+
+        Write to me at  
+	<a href="mailto:prernag46@gmail.com">prernag46@gmail.com</a> 
+	 or at
+	<a href="mailto:prernagupta@iitb.ac.in">prernagupta@iitb.ac.in</a>
+	<br>
+	Check out my 
+	<a href="https://www.facebook.com/profile.php?id=100038309543889">Facebook Profile</a>
+	<br>
+	Check out my 
+	<a href="https://www.linkedin.com/in/prerna-gupta-2362891a1/">LinkedIn Profile</a>
+
+    </p>
+
+
 
 </body>
 
